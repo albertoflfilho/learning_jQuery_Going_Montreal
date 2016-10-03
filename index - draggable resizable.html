@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Learning jQuery</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type"text/css" href="" />
+    <script type="text/javascript" src="jquery.min.js"></script>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.min.css"  />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+
+		<style>
+
+			.draggable {
+				width: 200px;
+				height: 200px;
+				background-color: green;
+			}
+
+			.resizable {
+				width: 200px;
+				height: 200px;
+				background-color: red;
+			}
+
+		</style>
+
+	</head>
+	<body>
+
+		<div class="draggable">
+			Drag me around!
+		</div>
+
+		<div class="resizable">
+			Resize me!
+		</div>
+
+		<script>
+
+		$(".draggable").draggable();
+
+		$(".resizable").resizable();
+
+		</script>
+
+	</body>
+</html>
